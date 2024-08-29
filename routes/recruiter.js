@@ -51,7 +51,7 @@ router.get("/a", (req, res) => {
   });
 router.get("/login",(req,res)=>{
     // res.send(" this is  an login page")
-    res.render("recruiter/RecruiterLogin.ejs",{isLoggedIn: req.isAuthenticated(),})
+    res.render("recruiter/Recruiterlogin.ejs",{isLoggedIn: req.isAuthenticated(),})
   })
 
 
