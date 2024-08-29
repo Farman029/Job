@@ -97,7 +97,7 @@ app.use(cookieParser());
 
   
   app.get("/", (req, res) => {
-    res.send("Hi, I am root");
+   res.redirect("/home")
   });
   
 app.get("/fail",(req,res)=>{
