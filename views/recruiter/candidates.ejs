@@ -1,0 +1,42 @@
+<%-include("../includes/BoilerHeader.ejs")%>
+
+
+
+<div class="container ">
+
+  <div class="profile-recruiter row">
+    <div class="col-md-4">
+      <h1>
+  <%=recruiter.username %> &nbsp; <i class="fa-regular fa-hand"></i>
+      </h1>
+      <p>  All applied candidates of your post are here ! </p>
+ <a href="/recruiter/postjob" class=" btn buttons  rounded-pill "> Add New Job Post</a>
+    </div>
+  </div>
+
+
+  <div class="posts">
+    <div class="container card-container-alljobs ">
+
+      <%  for( let candidate of post.appliedCandidates) {%>
+      <div class="row">
+        <div class="card card-alljobs ">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> <i class="fa-solid fa-money-bill-1-wave"></i> &nbsp; <%= candidate.username  %>  </li>
+        
+          </ul>
+     
+        </div>
+      </div>
+<% } %>
+
+
+
+
+    </div>
+  </div>
+
+</div>
+
+
+<%-include("../includes/BoilerFooter.ejs")%>

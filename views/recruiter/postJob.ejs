@@ -1,0 +1,58 @@
+<%-include("../includes/BoilerHeader.ejs")%>
+
+
+<div class="row  mt-3">
+    <h1  class="col-6 offset-3"> Post Your job </h1>
+        <div class="col-6 offset-3">
+    <form action="/recruiter/postjob" method="POST" class="needs-validation" novalidate>
+    
+        <div class="mb-3" >
+            <label for="title" class="form-label">Job Role </label>
+            <input 
+            name="title"
+              type="text"  
+               class="form-control" 
+               required
+               id="title"
+             />    
+          </div>
+       
+          <div class="mb-3" >
+            <label for="company" class="form-label">Company</label>
+            <input 
+            name="company"
+              type="text"  
+               class="form-control" 
+               required
+               id="company"
+             />
+          </div>
+          <div class="mb-3" >
+            <label for="joblocation" class="form-label">Job Location</label>
+            <input 
+            name="joblocation"
+              type="text"  
+               class="form-control" 
+               required
+               id="joblocation"
+             />
+          </div>
+          <div class="mb-3" >
+            <label for="basesalary" class="form-label">Base Salary</label>
+            <input 
+            name="basesalary"
+              type="text"  
+               class="form-control" 
+               required
+               id="basesalary"
+             />
+          </div>
+    
+    <button class=" btn buttons rounded-pill px-5 "> Post Your Job </button>
+    </form>
+    
+        </div>
+    </div>
+    
+
+<%-include("../includes/BoilerFooter.ejs")%>

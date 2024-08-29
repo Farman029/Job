@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,600;1,600&display=swap');
+
+ *{
+  
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important ;
+ 
+}
+/* header */
+.navbar {
+  color: #fff;
+  margin-bottom: 3rem;
+  min-width: 100vw;
+  text-decoration: none;
+  background-color: rgb(200, 195, 195);
+}
+
+/* header section  opens */
+.container-Header{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 0 1px rgb(100, 100, 100);
+    border-radius: 5rem;
+    }
+
+    .cards-container-header{
+      padding-bottom: 5rem;
+    }
+
+    .card-header:hover{
+      transition: all 1s ease;
+      transform: scale(1.05,1.05);
+    }
+    .card-header{
+      width: 18rem;
+    }
+    
+     .card-header .card-body a{
+      width: 100%;
+    
+    }
+    
+    
+    @media (min-width:280px) and (max-width:550px){
+      .container-Header{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        box-shadow: 0 0 0 0px rgb(100, 100, 100);
+        border-radius: 5rem;
+        }
+      
+      .card-header{
+      width: 14rem;
+    }
+    .card-title-header{
+      font-size: 1.2rem;
+    }
+    
+    }
+     
+    /* header section  closes*/
+
+    /* main section opens  */
+    .content-main{
+       
+        width: 70vw;
+      padding: 1rem;
+      box-shadow: 0px 0 1px  0.1px rgb(23, 23, 23);
+      margin-top: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 3rem;
+      }
+      /* main section closes  */
+
+
+      /* footerU */
+      
+.footer-box-upper{
+    height: 400px;
+    width:100vw;
+  background-color: rgba(198, 192, 192, 0.861); 
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  
+  .footer-upper{
+    display: grid;;
+    grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+  padding: 10px;
+  
+  }
+  
+  .part{
+  
+    padding: 1rem;
+    display: flex;
+   flex-direction: column;
+  
+  }
+  .part a{
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+   
+  }
+  .no-bullets {
+    padding: 1rem;
+    list-style-type: none; 
+  
+  }
+  
+  
+  @media (min-width:300px) and (max-width:550px) {
+   
+    
+  .footer-upper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+  
+  
+  .footer-box-upper{
+    height: 100vh;
+    width:100vw;
+  background-color: rgba(198, 192, 192, 0.861); 
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  }  
+  /* actual footer */
+  
+.footer {
+  min-width: 100vw;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.buttons{
+  color: rgb(0, 0, 0);
+ border: 1px solid black;
+  
+}
+
+
+.buttons:hover{
+  color: rgb(0, 0, 0);
+background-color: rgba(245, 102, 50, 0.618);
+}
+
+/* alljobs */
+.card-alljobs{
+
+  width: 60%;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+
+}
+.card-container-alljobs{
+
+  display: flex;
+ flex-direction: column;
+
+}
+.card-footer-alljob{
+margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+.card-footer-alljob a{
+
+  background-color: rgb(200, 195, 195);
+  }
+
+@media (min-width:280px) and (max-width:700px){
+  .card-alljobs{
+  background-color: rgb(66, 66, 64);
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 0.5rem;
+}
+}
+
+
+/* recruiter profile */
+
+.profile-recruiter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

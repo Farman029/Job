@@ -1,0 +1,37 @@
+<%-include("../includes/BoilerHeader.ejs")%>
+
+
+<div class="container card-container-alljobs ">
+
+    <% for(let job of alljobs) { %>
+      <form action=" /user/applyjob/<%= job._id %>" method="POST">
+    <div class="row">
+      <div class="card card-alljobs ">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fs-3 fst-italic"> <%= job.title %>  </li>
+          <li class="list-group-item"> <i class="fa-solid fa-money-bill-1-wave"></i> &nbsp; <%= job.basesalary%> </li>
+          <li class="list-group-item"> <i class="fa-solid fa-building"></i> &nbsp; <%= job.company %></li>
+          <li class="list-group-item"> <i class="fa-solid fa-location-dot"></i>  &nbsp;<%= job.joblocation %></li>
+          <li class="list-group-item"> <i class="fa-solid fa-location-dot"></i>  &nbsp;</li>
+
+        </ul>
+        <div class="card-footer card-footer-alljob ">
+        <button class="btn buttons rounded-pill "  >Apply now</button>
+        </div>
+      </div>
+    </div>
+  </form>
+    <% } %>
+
+
+
+
+     </div>
+    
+
+
+
+<%-include("../includes/BoilerFooter.ejs")%>
+
+
+

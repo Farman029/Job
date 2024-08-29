@@ -1,0 +1,53 @@
+<%-include("../includes/BoilerHeader.ejs")%>
+
+
+
+
+  <div class="container ">
+
+    <div class="profile-recruiter row">
+      <div class="col-md-4">
+        <h1>
+     <%= user.username %>  &nbsp; <i class="fa-regular fa-hand"></i>
+        </h1>
+        <p> We will find best Employee for You</p>
+   <a href="/recruiter/postjob" class=" btn buttons  rounded-pill "> Add New Job Post</a>
+      </div>
+    </div>
+
+
+    <div class="posts">
+      <div class="container card-container-alljobs ">
+
+<%  for( let post of user.posts) {%>
+
+        <div class="row">
+          <div class="card card-alljobs ">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item fs-3 fst-italic">  <%=post.title %>  </li>
+              <li class="list-group-item"> <i class="fa-solid fa-money-bill-1-wave"></i> &nbsp;   <%=post.basesalary %> </li>
+              <li class="list-group-item"> <i class="fa-solid fa-building"></i> &nbsp;  <%=post.company%> </li>
+              <li class="list-group-item"> <i class="fa-solid fa-location-dot"></i> &nbsp;  <%=post.joblocation %> </li>
+            </ul>
+            <div class="card-footer card-footer-alljob ">
+              <a class="btn buttons rounded-pill ">Edit Job Post</a>
+            </div>
+            <div class="card-footer card-footer-alljob ">
+              <a class="btn buttons rounded-pill " href="/recruiter/candidates/<%=post._id %> " >Look At Applied Candidates</a>
+            </div>
+          </div>
+        </div>
+
+    <%  } %>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <%-include("../includes/BoilerFooter.ejs")%>
+

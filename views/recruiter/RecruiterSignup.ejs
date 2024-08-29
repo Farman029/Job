@@ -1,0 +1,60 @@
+<%-include("../includes/BoilerHeader.ejs")%>
+
+
+
+<div class="row  mt-3">
+<h1  class="col-6 offset-3"> Signup as Recruiter</h1>
+    <div class="col-6 offset-3">
+<form action="/recruiter/signup" method="POST" class="needs-validation" novalidate>
+
+    <div class="mb-3" >
+        <label for="username" class="form-label">Username</label>
+        <input 
+        name="username"
+          type="text"  
+           class="form-control" 
+           required
+           id="username"
+         />
+
+        <div class="valid-feedback"   > looks good</div>
+      </div>
+      <div class="mb-3" >
+        <label for="email" class="form-label">Email</label>
+        <input 
+        name="email"
+          type="email"  
+           class="form-control" 
+           required
+           id="email"
+         />
+      </div>
+      <div class="mb-3" >
+        <label for="password" class="form-label">Password</label>
+        <input 
+        name="password"
+          type="password"  
+           class="form-control" 
+           required
+           id="password"
+         />
+      </div>
+      <div class="mb-3" >
+        <label for="company" class="form-label">Company</label>
+        <input 
+        name="company"
+          type="company"  
+           class="form-control" 
+           required
+           id="company"
+         />
+      </div>
+<button class=" btn buttons rounded-pill px-5">Signup</button>
+</form>
+
+    </div>
+</div>
+
+
+<%-include("../includes/BoilerFooter.ejs")%>
+

@@ -1,0 +1,47 @@
+<%-include("../includes/BoilerHeader.ejs")%>
+
+
+
+
+
+
+<div class="row  mt-3">
+<h1  class="col-6 offset-3"> User Login </h1>
+    <div class="col-6 offset-3">
+<form action="/user/login" method="POST" class="needs-validation" novalidate>
+
+    <div class="mb-3" >
+        <label for="username" class="form-label">Username</label>
+        <input 
+        name="username"
+          type="text"  
+           class="form-control" 
+           required
+           id="username"
+         />
+
+        
+      </div>
+     
+      <div class="mb-3" >
+        <label for="password" class="form-label">Password</label>
+        <input 
+        name="password"
+          type="password"  
+           class="form-control" 
+           required
+           id="password"
+         />
+      </div>
+
+<button class=" btn buttons rounded-pill mx-2 px-5 ">Login</button>
+<a href="/user/signup"  class="btn buttons rounded-pill mx-1 my-2 ">Don't have account  </a>
+
+</form>
+
+    </div>
+</div>
+
+
+<%-include("../includes/BoilerFooter.ejs")%>
+
